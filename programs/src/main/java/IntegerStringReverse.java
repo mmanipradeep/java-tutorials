@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class IntegerStringReverse {
     public static void main(String[] args) {
         System.out.println(IntegerStringReverse.stringReverse("manipradeep"));
@@ -28,4 +30,26 @@ public class IntegerStringReverse {
         }
         return reverveString;
     }
+
+
+    private static String reverseUsingStack(String string){
+        // base case: if the string is null or empty
+        if (string == null || string.equals("")) {
+            return string;
+        }
+            Stack<Character> stack = new Stack<>();
+                char[] ch = string.toCharArray();
+                 for (int i = 0; i < string.length(); i++) {
+            stack.push(ch[i]);
+        }
+        int k = 0;
+        while (!stack.isEmpty()) {
+            // assign each popped character back to the character array
+            ch[k++] = stack.pop();
+        }
+
+        // convert the character array into a string and return it
+        return String.copyValueOf(ch);
+    }
+
 }
