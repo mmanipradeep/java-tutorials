@@ -19,7 +19,8 @@ public class IntegerStringReverse {
             number = number / 10; // get rid of last digit }
 
         }
-        return isNegative == true? reverse*-1 : reverse;
+//        return isNegative == true? reverse*-1 : reverse;
+        return reverse;
     }
 
     private static String stringReverse(String s){

@@ -5,7 +5,7 @@ public class SmallestAndLargest {
         int[] integers = new int[] { 20, 98, 12, 7, 35 };
 
         int min = Arrays.stream(integers)
-                .max()
+                .min()
                 .getAsInt();
         System.out.println(min);
     }

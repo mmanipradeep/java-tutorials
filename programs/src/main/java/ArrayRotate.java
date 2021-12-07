@@ -24,6 +24,15 @@ public class ArrayRotate {
         arr[n - 1] = temp;
     }
 
+    /**
+     * Steps
+     * 1. Introduce 2 int variables
+     * 2.  Put the first element in a variable
+     *3.  iterate from 0 to no.of eleemnets -1
+     *
+     * @param arr
+     * @param n
+     */
     /* utility function to print an array */
     void printArray(int arr[], int n) {
         for (int i = 0; i < n; i++)
