@@ -29,6 +29,8 @@
         <module>java-hashmap-example</module>
         <module>binary-search</module>
         <module>gRPC-example</module>
+        <module>grpc-coding</module>
+        <module>grpc-client-streaming</module>
     </modules>
 
     <properties>
