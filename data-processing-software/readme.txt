@@ -1,0 +1,1 @@
+ Experience with data processing software (such as Hadoop, Kafka, Spark, Pig, Hive) and with data processing algorithms (MapReduce, Flume).

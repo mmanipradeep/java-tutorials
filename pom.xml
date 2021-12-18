@@ -32,6 +32,8 @@
         <module>spring-rest-zuul</module>
         <module>event-driven-architecture</module>
         <module>domain-driven-architecture</module>
+        <module>google-cloud-platform</module>
+        <module>data-processing-software</module>
     </modules>
 
     <properties>

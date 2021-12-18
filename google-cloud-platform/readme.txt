@@ -1,0 +1,1 @@
+Hands-on and deep experience working with Google Data Products (e.g. BigQuery, Dataflow, Dataproc, AI Building Blocks, Looker, Cloud Data Fusion, Dataprep, etc.).
