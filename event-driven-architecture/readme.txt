@@ -1,0 +1,1 @@
+https://dzone.com/articles/designing-high-volume-transaction-systems-using-event-driven-architectures

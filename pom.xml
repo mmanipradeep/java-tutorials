@@ -29,6 +29,8 @@
         <module>java-hashmap-example</module>
         <module>binary-search</module>
         <module>grpc-coding</module>
+        <module>spring-rest-zuul</module>
+        <module>event-driven-architecture</module>
     </modules>
 
     <properties>
