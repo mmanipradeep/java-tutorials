@@ -31,6 +31,7 @@
         <module>grpc-coding</module>
         <module>spring-rest-zuul</module>
         <module>event-driven-architecture</module>
+        <module>domain-driven-architecture</module>
     </modules>
 
     <properties>
