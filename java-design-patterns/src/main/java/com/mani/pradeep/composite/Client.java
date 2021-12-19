@@ -1,6 +1,6 @@
 package com.mani.pradeep.composite;
 
-public class Clinet {
+public class Client {
         public static void main(String[] args)
         {
             // Creating a component tree
