@@ -13,3 +13,11 @@ JEP 397: Sealed Classes
 (JEP-412) Foreign Function & Memory API (Incubator)
 (JEP-414) Vector API (Second Incubator)
 (JEP-415) Context-Specific Deserialization Filters
+
+Modules
+Records
+var keyword
+Text Block
+Sealed Classes
+var-args
+Lambda expression
