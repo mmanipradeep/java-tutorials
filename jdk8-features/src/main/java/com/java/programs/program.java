@@ -1,4 +1,4 @@
-package com.java;
+package com.java.programs;
 
 import java.util.List;
 import java.util.TimeZone;
@@ -9,6 +9,6 @@ public class program {
     public static void main(String[] args) {
         final List<String> timeZonesInUS = Stream.of(TimeZone.getAvailableIDs())
                 .filter(zoneId -> zoneId.startsWith("SG")).collect(Collectors.toList());
-        System.out.println(com.ibm.icu.util.TimeZone.getAvailableIDs(countryCode));
+     //   System.out.println(com.ibm.icu.util.TimeZone.getAvailableIDs(countryCode));
     }
 }
