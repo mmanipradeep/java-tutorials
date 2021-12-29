@@ -1,0 +1,4 @@
+Single  Object in JVM
+Global point of access
+Construct heavy weight objects are expensive
+create once always available
