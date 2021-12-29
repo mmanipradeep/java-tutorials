@@ -14,6 +14,16 @@
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
+        <javaee-api.version>8.0</javaee-api.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 </project>

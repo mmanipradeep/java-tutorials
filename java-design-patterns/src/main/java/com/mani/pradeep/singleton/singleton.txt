@@ -2,3 +2,7 @@ Single  Object in JVM
 Global point of access
 Construct heavy weight objects are expensive
 create once always available
+
+
+Best way is to create double locking Singleton
+

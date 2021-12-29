@@ -1,2 +1,11 @@
-package com.program.mapStruct.entity;public class SimpleDestination {
+package com.program.mapStruct.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class SimpleDestination {
+    private String name;
+    private String description;
 }

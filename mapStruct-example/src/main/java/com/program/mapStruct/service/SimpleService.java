@@ -1,2 +1,10 @@
-package com.program.mapStruct.service;public class SimpleService {
+package com.program.mapStruct.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SimpleService {
+    public String enrichName(String name) {
+        return "-:: " + name + " ::-";
+    }
 }
