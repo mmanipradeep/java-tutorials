@@ -34,16 +34,15 @@
         <module>event-driven-architecture</module>
         <module>domain-driven-architecture</module>
         <module>google-cloud-platform</module>
-        <module>data-processing-software</module>
         <module>jdk17-features</module>
         <module>jdk8-features</module>
         <module>jdk11-features</module>
         <module>jdk9-features</module>
         <module>elevator-system-design</module>
         <module>print-odd-even-numbers-thread</module>
-        <module>springboot-h2-database</module>
         <module>java-memory-model</module>
         <module>mapStruct-example</module>
+        <module>spring-boot-jwt-token</module>
     </modules>
 
     <properties>
