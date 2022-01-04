@@ -43,6 +43,8 @@
         <module>java-memory-model</module>
         <module>mapStruct-example</module>
         <module>spring-boot-jwt-token</module>
+        <module>java-data-structures</module>
+        <module>enterprise-architecture</module>
     </modules>
 
     <properties>

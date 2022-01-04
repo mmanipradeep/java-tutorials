@@ -21,3 +21,12 @@ Text Block
 Sealed Classes
 var-args
 Lambda expression
+
+Splittable Random Generator
+
+Jumpable Random Generator
+
+Leapable Random Generator
+
+ArbitrarilyJumpable Random Generator
+
