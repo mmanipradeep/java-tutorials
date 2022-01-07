@@ -5,10 +5,9 @@ public class Palindrome {
     public static void main(String[] args) {
 
         System.out.println(isPalindrome("madam"));
+        System.out.println(isPalindromeInteger(1221));
 
     }
-
-
     private static boolean isPalindrome(String s){
         String text ="madam";
         String temp  = text.replaceAll("\\s+", "").toLowerCase();

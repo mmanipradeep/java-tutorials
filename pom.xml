@@ -45,6 +45,7 @@
         <module>spring-boot-jwt-token</module>
         <module>java-data-structures</module>
         <module>enterprise-architecture</module>
+        <module>amazon-web-services</module>
     </modules>
 
     <properties>

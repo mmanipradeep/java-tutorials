@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,6 +10,7 @@
         <module name="spring-rest-zuul" />
         <module name="google-cloud-platform" />
         <module name="jdk8-features" />
+        <module name="java-data-structures" />
         <module name="java-hashmap-example" />
         <module name="java-concepts" />
         <module name="event-driven-architecture" />
@@ -16,17 +18,18 @@
         <module name="jdk9-features" />
         <module name="grpc-coding" />
         <module name="binary-search" />
+        <module name="spring-boot-jwt-token" />
+        <module name="amazon-web-services" />
         <module name="java-executor-framework" />
         <module name="print-odd-even-numbers-thread" />
         <module name="jdk11-features" />
         <module name="jdk17-features" />
-        <module name="springboot-h2-database" />
         <module name="java-design-patterns" />
         <module name="programs" />
         <module name="domain-driven-architecture" />
         <module name="java-memory-model" />
         <module name="java-strings" />
-        <module name="data-processing-software" />
+        <module name="enterprise-architecture" />
       </profile>
       <profile name="Annotation profile for java-tutorials" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -43,10 +46,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bar" target="1.8" />
+      <module name="data-processing-software" target="17" />
       <module name="foo" target="1.8" />
       <module name="foo-bar" target="1.8" />
       <module name="gRPC-example" target="17" />
       <module name="gRPC-sample" target="17" />
+      <module name="spring-boot-jwt" target="17" />
+      <module name="springboot-h2-database" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

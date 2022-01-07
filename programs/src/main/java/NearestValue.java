@@ -19,7 +19,7 @@ public class NearestValue {
         numbers[9] = 100;
         List<Integer> list = Arrays.stream(numbers).boxed().collect(Collectors.toList());
 
-        int n = 81;
+        int n = 200;
 
         int c = list.stream()
                 .min(Comparator.comparingInt(i -> Math.abs(i - n)))

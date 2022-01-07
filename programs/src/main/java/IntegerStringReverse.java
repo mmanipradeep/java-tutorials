@@ -3,7 +3,7 @@ import java.util.Stack;
 public class IntegerStringReverse {
     public static void main(String[] args) {
         System.out.println(IntegerStringReverse.stringReverse("manipradeep"));
-        System.out.println(IntegerStringReverse.integerReverse(12345));
+        System.out.println(IntegerStringReverse.integerReverse(-16));
     }
 
     private static int  integerReverse(int number) {
