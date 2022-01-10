@@ -46,6 +46,10 @@
         <module>java-data-structures</module>
         <module>enterprise-architecture</module>
         <module>amazon-web-services</module>
+        <module>java-script</module>
+        <module>html</module>
+        <module>java-interview-questions</module>
+        <module>microservice-architecture</module>
     </modules>
 
     <properties>
