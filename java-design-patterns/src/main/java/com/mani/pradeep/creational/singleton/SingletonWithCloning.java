@@ -1,4 +1,4 @@
-package com.mani.pradeep.singleton;
+package com.mani.pradeep.creational.singleton;
 
 public class SingletonWithCloning {
     public static void main(String[] args) throws CloneNotSupportedException

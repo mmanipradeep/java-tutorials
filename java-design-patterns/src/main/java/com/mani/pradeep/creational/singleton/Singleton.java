@@ -1,4 +1,4 @@
-package com.mani.pradeep.singleton;
+package com.mani.pradeep.creational.singleton;
 
 public enum Singleton {
 //    // public instance initialized when loading the class

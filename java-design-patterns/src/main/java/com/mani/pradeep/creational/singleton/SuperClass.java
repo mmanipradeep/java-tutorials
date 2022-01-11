@@ -1,4 +1,4 @@
-package com.mani.pradeep.singleton;
+package com.mani.pradeep.creational.singleton;
 
 public class SuperClass implements Cloneable{
     int i = 10;

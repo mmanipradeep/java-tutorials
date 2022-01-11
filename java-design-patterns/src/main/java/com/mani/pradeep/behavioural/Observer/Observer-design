@@ -1,0 +1,19 @@
+
+
+Observer is behavioural design pattern
+
+1. What  is observer pattern ?
+
+According to GoF definition, observer pattern defines a one-to-many dependency between objects
+so that when one object changes state, all its dependents are notified and updated automatically.
+It is also referred to as the publish-subscribe pattern.
+
+
+Observable is an object  which notifies observers  about the changes inthe  state.
+
+To be able to do that, the observable object needs to keep references to the observers,
+
+Implementation for the Observer
+Implenetation for Property change listener
+
+https://luizcostatech.medium.com/design-pattern-observer-using-java-8-and-java-9-49d34d9735f7
