@@ -50,6 +50,10 @@
         <module>html</module>
         <module>java-interview-questions</module>
         <module>microservice-architecture</module>
+        <module>angular-project</module>
+        <module>spring-reactive</module>
+        <module>docker</module>
+        <module>kubernetes</module>
     </modules>
 
     <properties>
