@@ -7,7 +7,8 @@ import java.util.concurrent.Flow;
 import java.util.concurrent.SubmissionPublisher;
 import java.util.function.Function;
 
-public class MyProcessor extends SubmissionPublisher<Freelancer> implements Flow.Processor<Employee, Freelancer> {
+public class MyProcessor extends SubmissionPublisher<Freelancer>
+        implements Flow.Processor<Employee, Freelancer> {
 
     private Flow.Subscription subscription;
     private Function<Employee,Freelancer> function;

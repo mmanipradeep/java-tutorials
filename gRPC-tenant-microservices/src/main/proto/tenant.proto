@@ -1,0 +1,33 @@
+syntax = "proto3";
+package mani;
+option java_package ="com.mani.services";
+option java_multiple_files = true;
+
+service TenantService{
+  rpc getTenantDetails(TenantRequest)  returns (TenantResponse);
+
+}
+
+message TenantRequest{
+  int32 id =1 ;
+}
+
+message TenantResponse {
+  int32 id = 1;
+  string name = 2;
+  string aadhaarCard = 3;
+  Gender gender =4;
+
+  /**
+  int64 , float , double , bool
+   */
+}
+
+enum Gender{
+  MALE = 0;
+  FEMALE = 1;
+  OTHERS =2;
+
+
+}
+

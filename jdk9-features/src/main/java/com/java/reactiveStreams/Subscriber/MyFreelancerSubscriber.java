@@ -1,11 +1,7 @@
 package com.java.reactiveStreams.Subscriber;
 
 import com.java.reactiveStreams.Freelancer;
-
-import java.util.LinkedList;
-import java.util.List;
 import java.util.concurrent.Flow;
-import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class MyFreelancerSubscriber implements Flow.Subscriber<Freelancer> {

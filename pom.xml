@@ -54,6 +54,8 @@
         <module>spring-reactive</module>
         <module>docker</module>
         <module>kubernetes</module>
+        <module>performance-testing</module>
+        <module>gRPC-tenant-microservices</module>
     </modules>
 
     <properties>

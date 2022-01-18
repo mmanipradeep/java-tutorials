@@ -1,6 +1,8 @@
 package com.java.reactiveStreams;
 
+import com.java.reactiveStreams.Subscriber.MyFreelancerSubscriber;
 import com.java.reactiveStreams.Subscriber.MySubscriber;
+import com.java.reactiveStreams.processor.MyProcessor;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -30,10 +32,12 @@ public class ReactiveStreamsUnitTest {
         publisher.close();
 
         //then
-        await().atMost(1000, TimeUnit.MILLISECONDS).untilAsserted(
-                () -> assertThat(subscriber.consumedElements).containsExactlyElementsOf(items)
+        await().atMost(1000, TimeUnit.MILLISECONDS)
+                .untilAsserted(() -> assertThat(subscriber.consumedElements)
+                        .containsExactlyElementsOf(items)
         );
     }
+
 
 
 }

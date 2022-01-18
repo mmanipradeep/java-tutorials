@@ -2,7 +2,7 @@ package com.mani.model;
 
 import javax.persistence.*;
 
-@Entity
+ty
 @Table(name = "roles")
 public class Role {
     @Id
