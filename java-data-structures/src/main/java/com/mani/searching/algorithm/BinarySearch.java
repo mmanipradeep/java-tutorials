@@ -1,2 +1,4 @@
-package com.mani.searching.algorithm;public class BinarySearch {
+package com.mani.searching.algorithm;
+
+public class BinarySearch {
 }
