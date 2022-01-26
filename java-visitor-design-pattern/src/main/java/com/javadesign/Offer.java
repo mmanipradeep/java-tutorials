@@ -1,2 +1,5 @@
-package com.javadesign;public interface Offer {
+package com.javadesign;
+
+public interface Offer {
+    void accept(CreditCardVisitor visitor);
 }

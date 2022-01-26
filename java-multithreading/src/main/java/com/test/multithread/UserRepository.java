@@ -1,2 +1,9 @@
-package com.test.multithread;public class UserRepository {
+package com.test.multithread;
+
+import java.util.UUID;
+
+public class UserRepository {
+    String getUserNameForUserId(Integer userId) {
+        return UUID.randomUUID().toString();
+    }
 }

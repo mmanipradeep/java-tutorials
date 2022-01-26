@@ -58,6 +58,9 @@
         <module>gRPC-tenant-microservices</module>
         <module>java-visitor-design-pattern</module>
         <module>spring-transactions</module>
+        <module>java-multithreading</module>
+        <module>Spring-Inversion-of-control</module>
+        <module>java-collections</module>
     </modules>
 
     <properties>
