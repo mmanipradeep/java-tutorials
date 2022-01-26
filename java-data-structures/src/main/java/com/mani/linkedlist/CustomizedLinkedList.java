@@ -18,7 +18,6 @@ public class CustomizedLinkedList<E> {
             this.value=value;
         }
     }
-
     public void addFirst(E value){
         /**
          * When we want to add elements at first let’s say 40,
@@ -51,6 +50,8 @@ public class CustomizedLinkedList<E> {
         tail=temp;
         size++;
     }
+
+
 
     /**
      *

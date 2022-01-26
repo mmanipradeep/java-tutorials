@@ -1,4 +1,4 @@
-package com.mani.pradeep.polymorphism.runtime;
+package com.mani.pradeep.polymorphism.compiletime;
 
 public class MethodOverloading {
     public static void main(String[] args) {
