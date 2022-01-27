@@ -16,6 +16,15 @@ public class BubbleSortTest {
         assertArrayEquals(sortedArray,array);
     }
 
+
+    @Test
+    public void whenSortedWithSelectionSort_thenGetSortedArray() {
+        int[] array = { 6,5,4,3,2,1};
+        int[] sortedArray = { 1, 2, 3, 4, 5, 6 };
+        SelectionSort selectionSort = new SelectionSort();
+        selectionSort.selectioSort(array);
+        assertArrayEquals(sortedArray,array);
+    }
     @Test
     public void BiConsumerExample(){
         int[] array = { 2, 1, 4, 6, 3, 5 };

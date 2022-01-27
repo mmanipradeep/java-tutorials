@@ -4,7 +4,7 @@ import java.util.Optional;
 
 public class findMiddleElement {
 
-    public static Optional<String> findMiddleElementFromHead1PassIteratively(Node head) {
+    public static Optional<String> findMiddleElementFromHead1PassIteratively(Node1 head) {
         /**
          * In this approach, we will have two node references.
          * First node, we increment by two steps
@@ -16,8 +16,8 @@ public class findMiddleElement {
             return Optional.empty();
         }
 
-        Node singleIncrement = head;
-        Node doubleIncrement = head;
+        Node1 singleIncrement = head;
+        Node1 doubleIncrement = head;
 
         while (doubleIncrement.hasNext() && doubleIncrement.next().hasNext()) {
             doubleIncrement = doubleIncrement.next().next();
