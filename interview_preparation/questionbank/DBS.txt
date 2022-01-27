@@ -1,0 +1,50 @@
+Technical Part -> 75%
+IQ Level & strategy Implementations --> 25% 
+kishan Tanwar 
+https://medium.com/@pulapaphani/why-overriding-equals-and-hashcode-in-java-b5f869f985d2
+
+1. Java 8 features (Laamda, Stream, filter, map, etc)
+2. Design Pattern (Singleton, Factory)
+3. Stream Api, Calender Api
+4. Difference between Spring 4 and spring 5
+5. How to check Server logs
+6. IBM Server
+7. @Component, @Service
+8. JWT Token
+9. MySQL -> Joins
+10. Hibernate entity class -> field name 'email' how do you make it unmodifiable
+11. Banking Strategies difference between NEFT & UPI
+12. Hibernate PessimisticLockException
+13. Hibernate mapping -> Eager, Lazy, Pagination (
+	(@OneToMany List<Employee> emp) just read the top 3 records from DB
+14. Some IQ questions
+15. Scenario of deployment
+16. How do you secure your Api
+17. End to End create RestApi starting from Entity class
+18. Spring Boot application properties file, db connections, persistance - update
+19. Multithreading -> ThreadLocal, sleep, notify, notifyAll, wait, SYNC.LOCK
+If any error occured on the website for user, can you show the error code, status, or code to user, etc---> IQ Level
+
+
+
+1. Explain previous project and questions based on it (Fuctional based questions like how the ACH mandate, E-mandate and payments works, How RTGS, UPI, NEFT works.)
+2. When out of memory will occure and how to overcome 
+3. How to analyse the heapdump
+4. Analytic questions based on the given requirment by interviewer.
+5. How cuncurrent hashmap works internaly
+6. Double check lock in Singletone
+7. Which is the best approach to implement the Singletone
+8. Questions based on Sychronized key word
+9. How serialization works and if we don't want to save some data what we have to do while doing serialization
+10. Which spring boot version you are using
+11. Why spring boot and what are the features
+12. How to do db configuration in spring boot
+13. How to implement cache in spring boot
+14. How to identify multiple request is coming from the same user
+15. How session works in spring
+16. Query tuning
+17. Hibernate cache -- first level and second level
+18. Write a query to select a manager name,employee name and higest salary of employee under each manager
+19. W.A.P to find unique elements in nxn matrix (Dynamic prgm)
+
+
