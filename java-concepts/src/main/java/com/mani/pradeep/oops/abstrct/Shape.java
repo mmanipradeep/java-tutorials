@@ -1,6 +1,9 @@
-package com.mani.pradeep.abstrct;
+package com.mani.pradeep.oops.abstrct;
+
+import java.util.IdentityHashMap;
 
 public abstract class Shape {
+
     String color;
 
     // these are abstract methods

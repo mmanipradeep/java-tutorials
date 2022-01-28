@@ -1,4 +1,4 @@
-package com.mani.pradeep.abstrct;
+package com.mani.pradeep.oops.abstrct;
 
 public class Rectangle extends Shape{
     double length;

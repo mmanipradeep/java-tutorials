@@ -1,4 +1,4 @@
-package com.mani.pradeep.inheritance;
+package com.mani.pradeep.oops.inheritance;
 
 public class MountainBike extends Bicycle {
     // the MountainBike subclass adds one more field

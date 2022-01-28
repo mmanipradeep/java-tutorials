@@ -1,4 +1,4 @@
-package com.mani.pradeep.polymorphism.runtime;
+package com.mani.pradeep.oops.polymorphism.runtime;
 
 public class Overriding {
     public static void main(String[] args) {

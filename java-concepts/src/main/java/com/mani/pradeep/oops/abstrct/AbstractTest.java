@@ -1,4 +1,4 @@
-package com.mani.pradeep.abstrct;
+package com.mani.pradeep.oops.abstrct;
 
 public class AbstractTest {
     public static void main(String[] args) {

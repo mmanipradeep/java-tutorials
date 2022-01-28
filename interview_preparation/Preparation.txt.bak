@@ -1,0 +1,88 @@
+1. In-memory Database -redis,memcache
+2. JPA2 , Hibernate
+3. Executor Service
+4. Java Bean Validation
+5. Performance Tuning 
+
+
+Microservices :
+===========
+1. Cirvuit Breaking
+2. Parallel Processing
+3. async processing
+
+
+
+Scripting Languages :
+================
+
+1. Bash
+2. powershell
+python
+JavaScript
+JQuery
+ruby
+Perl
+
+Testing 
+======
+Junit 
+JMockito
+Mocha
+Jasmine chai
+
+RestAssured
+Appium
+Circle Circle
+
+
+
+Design 
+======
+Proxy
+Adapter
+Builder
+Filter Interceptor
+Factory
+Observable
+
+Frontend development tools
+=====================
+
+Babel
+Webpack NPM
+
+Queueing Models 
+==============
+
+Oracle AQ
+RAbbitMQ
+Kafka
+IBM MQ
+JMS Queues
+
+Algorithm
+========
+
+Array
+LinkedList
+Stack
+QueueingBinaryTree
+Heap
+Graph
+BubbleSort
+SelectionsOrt
+InsertionSort
+MergeSort
+QuickSort
+Binary Search
+Linear Search
+Interpolation
+
+
+cloud :
+====
+
+Clinet Side LB and Server Side LB
+DB design using event sourcing and CQRS
+

@@ -1,4 +1,4 @@
-package com.mani.pradeep.inheritance;
+package com.mani.pradeep.oops.inheritance;
 
 public class Test {
     public static void main(String[] args) {
