@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>...</title>
+    </head>
+    <div id="current_date"></div>
+
+    <style>
+		a{
+			text-decoration: none;
+			color: green;
+			font-size: 20px;
+			padding: 8px;
+		}
+		a:hover{
+			color: blue;
+		}
+	         h1{
+		text-align: center;
+		}
+	</style>
+        <script>
+
+        let currentDate = new Date();
+let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+console.log(time);
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML = "Date : "+day + "/" + month + "/" + year+" Time: "+time;
+</script>
+<body>
+    <header role = "banner">
+    <h1>Expense Management Tool</h1>
+<!--    <p>This page should be tried in safari, chrome or Mozila.</p>-->
+    </header>
+
+    <nav>
+        <a href="#">Income </a> |
+        <a href="#">Expense</a>
+
+    </nav>
+
+
+
+<!--<article>-->
+<!--    <section>-->
+<!--        <p>Once article can have multiple sections</p>-->
+<!--    </section>-->
+<!--</article>-->
+
+<!--<aside>-->
+<!--    <p>This is  aside part of the web page</p>-->
+<!--</aside>-->
+<form>
+    <label for="number">Amount : </label>
+
+    <input type="number" id="number" min="1" step="any" /> <br>
+    <label for="payer">Payer :</label>
+    <input type="text" id="payer" name="payer"><br>
+
+    <label for="aadhaar">Aadhaar Number:</label><br>
+    <input type="number" id="aadhaar" min="2" max="5" name="aadhaar"/>
+    <br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    <button type="button">Click Me!</button>
+
+
+</form>
+<footer>
+    <p>Created by <a href = "https://tutorialspoint.com/">Tutorials Point</a></p>
+</footer>
+
+</body>
+</html>
