@@ -18,6 +18,14 @@ public class JavaStrings {
         String baseDirectory="manual";
         String fileNme ="abc.txt";
 
+        List<String> collect = Stream.of("welcome","to the","medium","where","we will", "learn","how to ","debug","streams","adding feeduplicate",
+                "welcome","hello")
+                .filter(s-> s.startsWith("w"))
+                .map(s->s.substring(3))
+                .distinct()
+                .sorted()
+                .collect(Collectors.toList());
+
         List<String> filePathParts = Arrays.asList(baseDirectory, subFolder,fileNme);
         String filePath = filePathParts.stream()
                 .collect(Collectors.joining(File.separator));
