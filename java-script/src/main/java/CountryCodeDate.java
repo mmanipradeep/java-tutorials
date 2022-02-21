@@ -36,12 +36,12 @@ public class CountryCodeDate {
             // Find all timezones for that country (code) using ICU4J
 
             for (String id :
-                    com.ibm.icu.util.TimeZone.getAvailableIDs("IN"))
+                    com.ibm.icu.util.TimeZone.getAvailableIDs("MY"))
             {
                 // Add timezone to result map
                 DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
                 df.setTimeZone(TimeZone.getTimeZone(id));
-             //   System.out.println(df.format(new Date()));
+                System.out.println(df.format(new Date()));
 
                 timezones.add(TimeZone.getTimeZone(id));
 

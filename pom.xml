@@ -148,9 +148,9 @@
     <module>java-collections</module>
             
     <module>spring-bean-life-cycle</module>
-          
+    <module>java-composite-design-pattern</module>
 
-      
+
   </modules>
       
   <properties>
