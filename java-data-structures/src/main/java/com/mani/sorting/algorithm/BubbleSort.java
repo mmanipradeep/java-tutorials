@@ -10,6 +10,7 @@ public class BubbleSort {
 
     public void oldBubbleSort(int [] unsortedArray){
 
+        boolean swapped = false;
         for(int i=0;i<unsortedArray.length-1 ; i++){
             for(int j =0; j< unsortedArray.length -i -1 ; j++){
                 if(unsortedArray[j] > unsortedArray[j+1]){
@@ -17,6 +18,9 @@ public class BubbleSort {
                     unsortedArray [j] = unsortedArray [ j+1];
                     unsortedArray [j+1] = temp ;
                 }
+            }
+            if(!swapped){
+                break;
             }
         }
 
