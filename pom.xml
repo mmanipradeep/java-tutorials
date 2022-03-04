@@ -149,6 +149,9 @@
             
     <module>spring-bean-life-cycle</module>
     <module>java-composite-design-pattern</module>
+      <module>algorithm-questions</module>
+      <module>jdk-10-features</module>
+      <module>jdk12-features</module>
 
 
   </modules>
