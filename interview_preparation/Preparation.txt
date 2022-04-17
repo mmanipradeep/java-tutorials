@@ -89,3 +89,21 @@ cloud :
 Clinet Side LB and Server Side LB
 DB design using event sourcing and CQRS
 
+Google Interview : 
+
+1. Advance Java Programming
+2. Different Java Frameworks
+3. Frontend Technologies -  React / Node 
+4. HTML 5 and CSS style basic static webpages
+5. Understanding Node Js , Backend Framework - Express JS / Restify / Koa 
+6. SQL , No-SQL ( Cloudant / MongoDB)
+7 . Key value databases - REdis / Session Mangement
+8. Authorixation and Authentication Workflow  using JWT
+9. SQL and No-SQL  databases and thier declarative query languages 
+10. Data structures and algorithms
+11. Experience in  Enterprise /Desktop / Web Application
+12. Core Java / Spring / Hibernate Framework
+13. understanding MVC Design Patterns
+14.Frond -end Technologies - JavaScript , HTML5 and CSS3
+  
+

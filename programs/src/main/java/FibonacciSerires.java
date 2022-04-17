@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class FibonacciSerires {
+public class FibonacciSerires {
+
+    public static  void main(String args[]){
+        
+    }
 }
