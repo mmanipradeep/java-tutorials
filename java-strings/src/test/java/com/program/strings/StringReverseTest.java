@@ -1,6 +1,7 @@
-package com.program.strings;
+package src.test.java.com.program.strings;
 
 import org.testng.annotations.Test;
+import src.main.java.com.program.strings.StringReverse;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
