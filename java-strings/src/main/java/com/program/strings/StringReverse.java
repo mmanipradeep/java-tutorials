@@ -1,4 +1,4 @@
-package com.program.strings;
+package src.main.java.com.program.strings;
 
 import com.google.common.base.CaseFormat;
 
