@@ -152,6 +152,10 @@
       <module>algorithm-questions</module>
       <module>jdk-10-features</module>
       <module>jdk12-features</module>
+      <module>template-design-pattern</module>
+      <module>state-design-pattern</module>
+    <module>proxy-design-pattern</module>
+      <module>mediator-design-pattern</module>
 
 
   </modules>

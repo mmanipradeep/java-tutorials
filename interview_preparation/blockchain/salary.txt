@@ -1,0 +1,14 @@
+TAX CALCULATION 0.00 0.00
+Tax Calculation on Taxable Income 0.00 542,512.00
+0 - 250000 : 0% 0.00 0.00
+250001 - 500000 : 5% 0.00 12,500.00
+500001 - 1000000 : 20% 0.00 8,502.00
+1000001 - 9999999999 : 30% 0.00 0.00
+Tax Rebate 0.00 0.00
+Tax (After Tax Rebate) 0.00 21,002.00
+Surcharge 0.00 0.00
+Health and Education Cess 0.00 840.00
+Total Tax Liability 0.00 21,842.00
+OTHER TDS DETAILS 0.00 0.00
+Previous Company TDS 0.00 0.00
+OUTSITE TDS 0.00 0
