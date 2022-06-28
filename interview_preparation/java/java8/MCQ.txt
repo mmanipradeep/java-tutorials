@@ -1,0 +1,15 @@
+Java -8  Aggregate Opertionas
+
+-- Filter Map forEach 
+
+
+Stream Methods
+
+Map
+Filter
+FlatMap
+count
+collect
+findAny
+findfirst
+peek

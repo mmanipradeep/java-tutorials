@@ -1,0 +1,1 @@
+Graph stores are used to store the social netwrok connection
