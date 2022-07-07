@@ -1,0 +1,5 @@
+1) How can we restrict an interface to be extended by any other interface? https://lnkd.in/dTU7cET
+2) How can we restrict an interface to be implemented by any other class?
+3) How can we restrict any class to be sub-classed by any other class without using final keyword?
+
+jdbc:h2:~/test

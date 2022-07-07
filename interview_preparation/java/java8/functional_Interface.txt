@@ -1,0 +1,32 @@
+Built-in interface
+
+1. Supplier
+2. Predicate
+3. Function
+4. Consumer
+5. BiFunction
+6.BInaryOperator
+
+Stream Operators
+
+forEach
+count
+filter
+sort
+map
+allMatch
+anyMatch
+noneMatch
+distinct
+reduce
+peek
+
+Numeric Streams
+
+SummaryStatistics()
+Collectors
+groupingBy()
+averagingInt
+partitioningBY
+
+Parallet Streams
