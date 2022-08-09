@@ -1,0 +1,166 @@
+Before practicing in Leetcode and taking up any contest or interviews I refer to the below notes.
+
+This notes contain basic details such as how to declare, initiate, access(add/remove), iterate arrays, set, list, map, queue, stack
+
+Arrays
+
+stores values of the same data type. Address of elements are stored consecutively in memory
+length is fixed. inserting or deleting an element in middle is not easy
+
+Declaration:
+
+int[] nums = {1,2,4} //initializing with values
+int[] nums = new int[10] //initializing with size. 0 will be initialized in all indexes if we declare without variables
+
+Accessing an element:
+
+Array index starts from 0..length-1
+int[] nums = {1,2,4}
+nums[0] — 1
+nums[1] — 2
+nums[2] — 4
+
+Sorting an element:
+Arrays.sort(nums);
+
+Filling arary element with some values:
+Arrays.fill(nums, -1) -> this will assign all values in the array as -1
+
+Binary search — Arrays.binarySearch(array,value to find) -> returns index
+
+List:
+
+size is dynamic
+
+1. ArrayList & Linked List
+
+They store in the order we provide and it can have duplicates
+
+List<String> a1 = new ArrayList();
+a1.add(“Zara”);
+a1.add(“Mahnaz”);
+a1.add(“Ayan”);
+System.out.println(“ ArrayList Elements”);
+System.out.print(“\t” + a1);
+
+List<String> l1 = new LinkedList<>();
+l1.add(“Zara”);
+l1.add(“Mahnaz”);
+l1.add(“Ayan”);
+System.out.println();
+System.out.println(“ LinkedList Elements”);
+System.out.print(“\t” + l1);
+
+output:
+
+ArrayList Elements
+[Zara, Mahnaz, Ayan]
+LinkedList Elements
+[Zara, Mahnaz, Ayan]
+
+Difference between Array List & Linked List:
+
+Array List stores values sequentially, so if we add or remove a value it needs more time to shift its elements and adjust
+
+LinkedList stores randomly in memory and links by pointers. inserting and deleting takes less time here
+
+methods -
+add(value), add(index, value),remove(value),get(key),
+
+contains(value) returns true or false
+isEmpty() return true or false,
+clear(),
+size() returns int
+removeLast()
+removeFirst()
+
+Set:
+
+Set can’t have duplicates
+
+Hashset — stores in order we give
+Treeset — stores in asc order
+
+Declatation and initialisation:
+
+Set<Integer> set = new HashSet<>();
+
+set.add(5);
+
+set.add(18);
+
+methods -
+add(value) — returns t/f,
+remove(value),
+contains(value) — returns t/f,
+isEmpty() return true or false,
+clear(),
+size() returns int
+
+Maps:
+
+stores unique key, value pair
+Hash Map — stores in order we provide
+Tree Map — stores in key’s ascending order
+
+Map<String,String> m1 = new HashMap();
+m1.put(“Zara”, “8”);
+m1.put(“Mahnaz”, “31”);
+m1.put(“Ayan”, “12”);
+m1.get(“Zara”);
+
+Methods:
+-put(key,value), get(key)
+-containsKey(key) — returns true or false
+-containsValue(value) — returns true or false
+-isEmpty() — returns True or false
+-size() returns int
+-values() returns list of values
+-keys() returns list of keys
+-putIfAbsent(key,new value)
+-getOrDefault(existing,inititalize value)
+-ceilingKey(key) -> gives greater element to the key
+-lowerKey or floorkey(key) -> gives smaller element to the key
+
+Iterating hash map
+
+for(int value : map.values()){
+
+}
+
+for(int key : map.keys()){
+
+}
+
+for(Map.Entry<String,String> entry : map.entrySet()){
+System.out.println(“Key = “ + entry.getKey() +
+“, Value = “ + entry.getValue());
+}
+
+Stack:
+
+Last In First Out policy
+
+Stack<Integer> st = new Stack<Integer>();
+
+methods:
+— push(), pop()
+— size(), empty()
+
+-contains(value) returns true or false
+ — stack.remove(index)
+
+Queue: (Interface and not class)
+
+FIFO policy
+1. Queue<Integer> ll = new LinkedList<Integer>(); //stores in order we insert
+2. Queue<Integer> pQueue = new PriorityQueue<Integer>(); //it stores in Asc order. This can also be used as Min heap
+
+2. Queue<Integer> pQueue = new PriorityQueue<Integer>((a,b) -> b-a); //it stores in desc order. This can also be used as max heap
+
+methods:
+offer(element) used to initialize queue
+add(element),
+
+remove(element) /poll() returns top element
+peek()/element() returns top element that will be polled
