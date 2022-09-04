@@ -1,0 +1,8 @@
+git config --global --list
+http.postbuffer=524288000
+url.ssh://git@github.com/.insteadof=https://github.com/
+url.https://github.com/.insteadof=git@github.com:
+url.https://.insteadof=ssh://
+url.https://github.insteadof=ssh://github
+user.email=mmanipradeep@gmail.com
+user.name=mmanipradeep
