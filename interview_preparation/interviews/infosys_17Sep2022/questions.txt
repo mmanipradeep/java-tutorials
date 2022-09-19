@@ -1,0 +1,8 @@
+RabbitMq
+ActiveMq
+Push and pull Notification
+Critical project task handled by team
+EVent driven architecure
+components for creating a microservices
+stateful and stateless services
+RFP ( REquest for Proposal )
