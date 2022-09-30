@@ -1,0 +1,29 @@
+finalaly with return
+patch is idempotent , options
+1XX ,2XX and 3XX in REST API
+Optional.get() , . getThrow
+starvation in multithreadng
+Service Discovery explain
+Other way to @SpringbootApppliation
+Excluse a componnt in springboot
+JSON  mapping
+Extend functional Interface from another Functional Intergace
+fallback scenario in microservices
+disadvanctage of microservices
+Illegalstateexception
+Unreachable Statement Exception
+try with resources
+When to use buffer reader , file reader , ?
+use of flatmap
+summarystatistics in java 
+SQL Injections
+Spring security Implementation
+Arrays.asList is dynamic or static? - Fixed Lengh --> UnsupportedOperationException --> No data is copied or created
+@Transactional Annotation
+Asynchronous / synchronosu communication in microservices
+Spring Actuator
+Which takes precedence  -application.propertoes or yaml file
+Spring profiling
+How to deploy you code in AWS cloud
+Parallel Stream or Sequntial Stream
+forEach / Iterable
