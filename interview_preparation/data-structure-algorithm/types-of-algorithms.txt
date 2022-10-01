@@ -1,0 +1,7 @@
+Brute force
+Recursive
+Divide and Conquer
+Greedy
+Dynamic
+Backtrcking
+Randomized
