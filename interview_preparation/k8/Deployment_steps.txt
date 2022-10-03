@@ -1,0 +1,8 @@
+1. create a docker image for application using google jib or spring boot build pack or Docker File 
+
+FROM openjdk:8
+EXPOSE 8080
+ADD target/springboot-k8s-demo.jar springboot-k8s-demo.jar
+ENTRYPOINT ["java","-jar","/springboot-k8s-demo.jar"]
+
+

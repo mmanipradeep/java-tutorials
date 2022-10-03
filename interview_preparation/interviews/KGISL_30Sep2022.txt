@@ -1,5 +1,5 @@
 finalaly with return
-patch is idempotent , options
+patch is idempotent , What are options
 1XX ,2XX and 3XX in REST API
 Optional.get() , . getThrow
 starvation in multithreadng
