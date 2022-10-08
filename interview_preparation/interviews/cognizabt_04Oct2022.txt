@@ -1,0 +1,21 @@
+Overloading
+Overriding
+Interface
+Static keyworld
+contructor overloading
+Fileter with to Upper case ?
+Throws and Thtow
+Exceptions 
+Why spring boot
+API IMplementation
+Kafka implementation
+Inheritance
+contructor overloading
+functional interface 
+lambda expressions
+Marker Interface
+cloning
+Multhreading
+hashmap internals
+hashset and  treeset difference 
+abstract class and interface
