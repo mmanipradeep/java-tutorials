@@ -1,0 +1,19 @@
+String str = "abcdefgh";   return cbafedhg
+
+Topic - Max numnber of messages ?
+
+LRU Cache
+
+Employee Sort by Age 
+Filter  age >20
+
+convert list to Map and vice versa
+
+Singletome pattern in distributed architecture
+Liskov substitution
+Spring Integration
+Abstract and Factory Desgin Pattern
+Zookeeper
+CI/ CD pipeline
+Circuit Braker pattern
+Functional Interface
