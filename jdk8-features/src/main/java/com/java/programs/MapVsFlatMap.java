@@ -23,7 +23,7 @@ public class MapVsFlatMap {
 
         MapVsFlatMap amazon = new MapVsFlatMap("amazon", "Laptop", "Phone");
         MapVsFlatMap ebay = new MapVsFlatMap("ebay", "Mouse", "Keyboard");
-        List<MapVsFlatMap> parcels = Arrays.asList(amazon, ebay);
+        List<MapVsFlatMap> parcels = Arrays.asList(amazon,ebay);
 
         System.out.println("-------- Without flatMap() ---------------------------");
         List<List<String>> mapReturn = parcels.stream()
