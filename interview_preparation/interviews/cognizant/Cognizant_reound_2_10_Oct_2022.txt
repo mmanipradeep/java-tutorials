@@ -1,6 +1,7 @@
-String str = "abcdefgh";   return 
+String str = "abcdefgh";   return    abcfedhg
 
 https://www.geeksforgeeks.org/reverse-the-substrings-of-the-given-string-according-to-the-given-array-of-indices/
+https://www.baeldung.com/java-string-split-every-n-characters
 
 Topic - Max numnber of messages ?
 
@@ -25,62 +26,40 @@ Functional Interface
 construct a character histogram of a given string
 
 If two strings have different character histograms, then what are the minimum deletions needed to make them equal?
+https://stackoverflow.com/questions/46075822/how-to-reverse-n-characters-of-n-parts-in-string-using-java
 
-// Java implementation to reverse
-// the subStrings of the given String
-// according to the given Array of indices
-class GFG
-{
 
-static String s;
-
-// Function to reverse a String
-static void reverseStr(int l, int h)
-{
-	int n = h - l;
-
-	// Swap character starting
-	// from two corners
-	for (int i = 0; i < n / 2; i++)
-	{
-		s = swap(i + l, n - i - 1 + l);
+import java.util.Arrays;  
+import java.util.List;  
+import java.util.stream.Collectors; 
+class SubString {
+	
+	public static void main(String args[]){
+		int count =0;
+		StringBuilder sb = new StringBuilder();
+		 String[] results = "abcdefgh".split("(?<=\\G.{3})");
+		 for (int i =0; i<= results.length-1;i++){
+			 System.out.println(results[i]);
+			 if(count==0){
+				 		 sb.append(results[i]);
+			 }else{
+				 sb.append(reverseString(results[i]));
+			 }
+	count++;
+		 }
+		
+		 System.out.println(sb.toString());
+		
 	}
+	
+	
+	public static String  reverseString(String str){
+			String reverseStr = Arrays.asList(str).stream()
+    .map(s -> new StringBuilder(s).reverse().toString())
+    .collect(Collectors.toList()).get(0);
+	
+	return reverseStr;
+	}
+	
+
 }
-
-// Function to reverse the String
-// with the given array of indices
-static void reverseString(int A[], int n)
-{
-
-	// Reverse the String from 0 to A[0]
-	reverseStr(0, A[0]);
-
-	// Reverse the String for A[i] to A[i+1]
-	for (int i = 1; i < n; i++)
-		reverseStr(A[i - 1], A[i]);
-
-	// Reverse String for A[n-1] to length
-	reverseStr(A[n - 1], s.length());
-}
-static String swap(int i, int j)
-{
-	char ch[] = s.toCharArray();
-	char temp = ch[i];
-	ch[i] = ch[j];
-	ch[j] = temp;
-	return String.valueOf(ch);
-}
-
-// Driver Code
-public static void main(String[] args)
-{
-	s = "abcdefgh";
-	int A[] = { 2, 4, 6 };
-	int n = A.length;
-
-	reverseString(A, n);
-	System.out.print(s);
-}
-}
-
-// This code is contributed by Rajput-Ji
