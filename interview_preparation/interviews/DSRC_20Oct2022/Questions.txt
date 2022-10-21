@@ -1,0 +1,11 @@
+1. remove duplicated from the list of 10000 records using streams ?
+2.Processing of JSON is slow what will be the action ?
+3.How will you approach to create a software from scratch ?
+4.How to call stored procedure from spring framework ?
+5. What is AJAX,JavaScript and JQuery ?
+6.HOw to get NextThurdsay in JAva 8
+7.Proactive check for Security vulnerability?
+8.Branch Merging in case of any hotfixes 
+9. CI/ CD pipeline
+10. call stored procedure from spring boot 
+11. How to configure Mongo DB releation ship in hibernate / Joins
