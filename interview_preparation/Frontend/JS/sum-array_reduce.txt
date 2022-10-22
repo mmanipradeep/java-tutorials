@@ -1,0 +1,3 @@
+var numbers =  [3,5,7,5];
+var sum = numbers.reduce((x,y) => x+y);
+console.log(sum);
