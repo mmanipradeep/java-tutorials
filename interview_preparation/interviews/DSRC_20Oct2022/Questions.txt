@@ -1,9 +1,34 @@
 1. remove duplicated from the list of 10000 records using streams ?
 2.Processing of JSON is slow what will be the action ?
 3.How will you approach to create a software from scratch ?
+
+
 4.How to call stored procedure from spring framework ?
+
+
+@Entity
+@Table(name = "employees")
+@Data
+@NamedStoredProcedureQueries({
+        @NamedStoredProcedureQuery(name = "getAllEmployees",
+                                    procedureName = "get_all_employees",
+        resultClasses = Employees.class)
+})
+
+
+
+
 5. What is AJAX,JavaScript and JQuery ?
-6.HOw to get NextThurdsay in JAva 8
+
+
+6.HOw to get NextThurdsay in JAva 8 ?
+
+
+LocalDate ld = LocalDate.of(2014, Month.JUNE, 12);
+System.out.println(ld);
+ld = ld.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+System.out.println(ld);
+
 7.Proactive check for Security vulnerability?
 8.Branch Merging in case of any hotfixes 
 9. CI/ CD pipeline
