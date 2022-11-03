@@ -1,0 +1,18 @@
+					
+						Java 11 fetures
+						deploy application without downtime
+						Microservice deign patterns
+						Kafka producer and consumer
+						Aurora DB
+						blue green deployment
+						Global session Id
+						Elastic kubernetes service
+						Design document
+						TDD framework
+						Distributed architecture
+						OPen API spec
+						How to make the service as Idempotent ?
+						How to handle transaction in microservices?
+						
+						
+						

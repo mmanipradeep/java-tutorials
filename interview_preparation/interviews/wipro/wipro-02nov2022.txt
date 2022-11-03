@@ -1,0 +1,19 @@
+List<Employee> list = Arrays.asList(new Employee(1,"venkat","Male","dept1",40000),
+                                    new Employee(2,"Rajesh","Male","dept2",10000), 
+                                    new Employee(3,"raji","female","dept1",60000));
+									
+									
+									list.stream().collect(collectors.toMap(Employee::getDepNmae, Employee.getNaMe).getCount();
+						list.stream().collect.Collectors.toList(Employee.getSalary()).max(); min av
+						
+						Spring builder
+						String Buffer
+						
+						Hashmap ( "one"  and ONE
+						
+						Funtional interface extends  Functional insterface
+						
+						Count with dept wise
+						Max of slaary
+						Synchronized keyword
+						customized exption in java
