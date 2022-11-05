@@ -1,0 +1,13 @@
+Architecture of current project 
+Performance Update in current project 
+Generaics
+Inner and outter join Example in DB
+Joines
+AWS email sending service
+DB Desginging  example
+Scalability  in application using EC2
+Docker and Kubernetes
+Software Estimate
+PUSH and pull services
+equals and hashcode 
+

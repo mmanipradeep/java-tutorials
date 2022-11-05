@@ -1,0 +1,12 @@
+Student MAngement 
+
+
+Student Table
+
+Id primary key
+Name 
+created By
+created Date
+
+
+student_marks
