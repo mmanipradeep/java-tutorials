@@ -11,3 +11,22 @@ Software Estimate
 PUSH and pull services
 equals and hashcode 
 
+
+Round 2 
+
+Functional Architeture of current project 
+SNS 
+SQS
+EC2
+Transactions in Microservice
+Java 11 features
+AWS Cognito 
+AWS Ampily
+AWS Lambda
+Joins
+Resiliance4j
+Hystrix- cirvuit breaker
+Performance tuning
+Security implementation
+
+
