@@ -1,0 +1,73 @@
+frontend Development
+
+JavaScript and TypeScript Knowledge
+Extensive Knowledge of HTML and CSS
+React JS / Vue JS - Associated Framework - Next.JS Nuxt JS
+ES Modules  / Web Components
+Client side rendering / server side rendering . - Knowledge of netwroking and caching
+How browser works - CDN's  , HTTP Protocol , caching
+microfrontends , microservices
+Content Management Systems
+Build tools
+PAckage Managers
+CI/CD Pipelines
+
+
+
+Hadoop / Spark / pySpark
+
+Devops : Kubernetes , Docker. Jenkins , Prometheus
+
+
+Security Architect 
+- IAM
+PKI
+
+
+SecurityCertification :   CISSP , CSSLp
+
+General Data Protection Regulation (GDPR) Checklist
+
+
+GCP 
+
+1. DataProc
+2. Data Flow
+Cloud Big Table
+Big Query
+Cloud SQL
+5. Cloud Pub/ Sub
+Cloud Data Fusiion
+Cloud Composer
+Cloud Function
+Querying services like BigQuery , DataLab
+DataStrore
+FireStore
+MemoryStore
+SCripting competancy (Powershell / python/JSON YML)
+Configuration MAnagement - Choud shell / Jenkins/ Ansible)
+
+Cloud Storage  , Persistent disk , Cloud filestore
+Compute Engine, App Engine, VMWare Engine
+Looker 
+IAM
+Prodcutivity Tools --> Artificat@ Container Registry ,Cloud source repositories
+GCP AI and ML Services
+
+Deliver and deploy design architecture
+Data Quality Check  on GCP
+Streaming Data into BigQuery
+
+
+3.GKE
+
+6.Cloud Spanner
+
+
+Data Engineering and Analytics Solution in GCP
+
+
+Certification : 
+
+Certififed Google Cloud Architect
+Google Data Engineeer
