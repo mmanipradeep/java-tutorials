@@ -1,0 +1,4 @@
+Materialized View Pattern
+CQRS Design Pattern
+Event Sourcing Pattern
+EVentual Consistency Principle

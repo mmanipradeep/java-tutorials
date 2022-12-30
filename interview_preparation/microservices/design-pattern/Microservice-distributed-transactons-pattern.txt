@@ -1,0 +1,7 @@
+Saga Pattern
+Choreography -base SAGA 
+Orchestration -based SAGA
+Compensating Transaction Pattern
+Dual Write Problem
+Transactional Outbox Pattern
+CDC - Change Data Capture

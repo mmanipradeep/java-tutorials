@@ -1,0 +1,4 @@
+Single-receiver Message-based communication(one-to-one model)
+Muliple-receiver Message based communication(one-to-many model -topic)
+Fanout Publish/Subscribe Messaging Pattern
+Topic-Queue Chaining and Load Balancing Pattern

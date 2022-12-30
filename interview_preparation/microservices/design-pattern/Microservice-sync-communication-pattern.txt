@@ -1,0 +1,7 @@
+API Gateway Pattern
+Gateway Routing Pattern
+Gateway Aggregation Pattern
+Gateway Offloading Pattern
+Backend for Frontend Pattern - BFF
+Service Aggregator Pattern
+Service REgistry / Discovery  Pattern

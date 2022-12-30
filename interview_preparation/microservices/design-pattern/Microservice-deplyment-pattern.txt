@@ -1,0 +1,6 @@
+Container and Orchestrators
+Kuberntes Patterns
+KDA -Kubernetes Event Driven AutoSCaler
+Sidecar PatternsService Mesh
+Infrastructure as Code (IAc)
+CI/ CD Pipeline

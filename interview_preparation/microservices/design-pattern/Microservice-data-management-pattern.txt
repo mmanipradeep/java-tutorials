@@ -1,0 +1,7 @@
+Shared Databse Anti Patttern
+Relational and  NO-SQL database
+CAP theorem - Consistency
+Availability
+Partition Tolerance
+Data partioning : HOrizontal, Vertical and Functonal Data Partioning
+Database Sharding Pattern
