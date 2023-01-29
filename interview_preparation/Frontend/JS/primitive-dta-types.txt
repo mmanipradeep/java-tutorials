@@ -1,0 +1,15 @@
+-	Immutable 
+String
+number
+bigint
+boolean
+undefines
+symbol
+null
+
+
+Mutable
+Object 
+Function
+
+
