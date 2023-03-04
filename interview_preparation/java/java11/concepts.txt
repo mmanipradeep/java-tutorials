@@ -1,0 +1,12 @@
+ZGC
+-feature is concurrent
+-region based
+compact garbage collector
+
+HttpClient
+
+String processing method
+
+Optional enhancement (Optional to Stream)
+
+
