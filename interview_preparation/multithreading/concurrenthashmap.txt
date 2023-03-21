@@ -1,0 +1,6 @@
+- one of the common consurrent containers
+-used as cache in consurrent scenarios
+- bottom layer is hastable
+-In java 7 - segemented locks  are used toreduce lock competition
+In java 8 - locks are abandoned and CAS is adopted(Compare and swap)
+- Linkedlist will beconverted to red-black tree after it reaches the threshold

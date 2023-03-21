@@ -1,0 +1,2 @@
+- bottom layer is array
+- it traverse to entire collection to know whether exit or not.

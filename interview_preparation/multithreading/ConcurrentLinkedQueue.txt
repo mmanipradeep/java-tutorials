@@ -1,0 +1,1 @@
+-concurrent queue implemented based on linked list uses optimistic locking(CAS) to ensure thread safty

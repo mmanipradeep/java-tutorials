@@ -1,0 +1,30 @@
+Find What: ^(?:1-?)?(?|\(1?(\d{3})\)|(\d{3}))[-\s]?(\d{3})[-\s]?(\d{4})$|^(\d{3})[-\s]?(\d{4})$
+Replace With: (?1$1-$2-$3:XXX-$4-$5)
+
+
+Details:
+
+^ - start of string
+(?:1-?)? - optional sequence of 1 and an optional -
+(?|\(1?(\d{3})\)|(\d{3})) - a branch reset group (syntax is (?|...), all groups inside alternative branches receive same IDs) matching either:
+\(1?(\d{3})\) - ( + an optional 1 + Group 1 capturing 3 digits + )
+| - or
+(\d{3}) - Group 1 (still! because of a branch reset group) capturing 3 digits
+[-\s]? - 1 or 0 (optional) - or whitespace
+(\d{3}) - Group 2 capturing 3 digits
+[-\s]? - an optional - or whitespace
+(\d{4}) - Group 3 capturing 4 digits
+$ - end of line
+| - OR
+^ - start of line
+(\d{3}) - Group 4 capturing 3 digits
+[-\s]? - an optional - or whitespace
+(\d{4}) - Group 5 capturing 4 digits
+$ - end of line
+The replacement pattern:
+
+(?1 - If Group 1 matched, then use
+$1-$2-$3 - Backreference to Group 1, 2 and 3 with hyphens in between
+: - or else
+XXX-$4-$5 - XXX (or whatever the country code is), and Group 4 and 5 separated with a hyphen.
+) - end of the if-then block.
