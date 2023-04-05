@@ -1,0 +1,44 @@
+private static class Add extends Operation {
+    Add(double num1, double num2) {
+        super(num1, num2);
+    }
+    @Override
+    public double calculate() {
+        return getNum1() + getNum2();
+    }
+}
+
+private static class Subtract extends Operation {
+    Subtract(double num1, double num2) {
+        super(num1, num2);
+    }
+    @Override
+    public double calculate() {
+        return getNum1() - getNum2();
+    }
+}
+private static class Multiply extends Operation {
+    Multiply(double num1, double num2) {
+        super(num1, num2);
+    }
+    @Override
+    public double calculate() {
+        return getNum1() * getNum2();
+    }
+}
+private static class Divide extends Operation {
+    Divide(double num1, double num2) {
+        super(num1, num2);
+    }
+    @Override
+    public Operation validated() {
+        if (getNum2() == 0) {
+            throw new ArithmeticException("Error: Division by zero is not allowed");
+        }
+        return super.validated();
+    }
+    @Override
+    public double calculate() {
+        return getNum1() / getNum2();
+    }
+}

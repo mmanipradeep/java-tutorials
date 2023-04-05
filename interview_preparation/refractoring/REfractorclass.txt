@@ -1,0 +1,40 @@
+public class RefactoredCalculator implements Calculator {
+
+    private final static Map<String, BiFunction<Double, Double, Operation>> OPERATIONS_MAP;
+
+    static {
+        OPERATIONS_MAP = new HashMap<>();
+        OPERATIONS_MAP.put("+", Add::new);
+        OPERATIONS_MAP.put("-", Subtract::new);
+        OPERATIONS_MAP.put("*", Multiply::new);
+        OPERATIONS_MAP.put("/", Divide::new);
+    }
+
+    @Override
+    public double calculate(double num1, double num2, char operatorSign) {
+        return getOperation(operatorSign)
+                .apply(num1, num2)
+                .validated()
+                .calculate();
+    }
+
+    private BiFunction<Double, Double, Operation> getOperation(char operatorSign) {
+        String operator = String.valueOf(operatorSign);
+        return Optional.ofNullable(OPERATIONS_MAP.get(operator))
+                .orElseThrow(() -> new IllegalArgumentException("Error: Invalid operator: " + operator));
+    }
+
+    @Getter(AccessLevel.PACKAGE)
+    @RequiredArgsConstructor
+    abstract static class Operation {
+        private final double num1;
+        private final double num2;
+
+        abstract double calculate();
+
+        Operation validated() {
+            return this;
+        }
+    }
+
+}
