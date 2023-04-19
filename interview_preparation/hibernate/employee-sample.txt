@@ -1,0 +1,36 @@
+@Entity
+@Table(name = "employees")
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
+public class Employee extends AbstractPersistableEntity<Integer> {
+
+    @Id
+    @Column(name = "emp_no")
+    private int employeeId;
+
+    @Column(name = "birth_date")
+    private LocalDate birthDate;
+
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
+
+    @Column(name = "hire_date")
+    private LocalDate hireDate;
+
+    @OneToMany(mappedBy = "employeeId", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Salary> salaries;
+
+    @OneToMany(mappedBy = "employeeId", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Title> titles;
+
+    @Override
+    public Integer getId() {
+        return employeeId;
+    }
+}

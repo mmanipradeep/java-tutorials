@@ -1,0 +1,5 @@
+Github copilot
+Sonarlint
+Tabine aI Code completion
+Code With Me
+AI Coding Assistant
