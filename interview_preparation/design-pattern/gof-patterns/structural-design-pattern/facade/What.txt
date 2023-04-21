@@ -1,0 +1,4 @@
+A facade is an object. It provides a simplified interface to a larger body of code.
+ The Facade design pattern is often used when a system is very complex or difficult to understand because 
+ the system has a large number of interdependent classes or its source code is unavailable.
+ This pattern hides the complexities of the larger system and provides a simpler interface to the client.

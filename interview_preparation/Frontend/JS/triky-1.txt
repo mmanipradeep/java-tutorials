@@ -1,0 +1,27 @@
+setTimeout(() => console.log(1), 0);
+
+console.log(2);
+
+new Promise(res => {
+  console.log(3)
+  res();
+}).then(() => console.log(4));
+
+console.log(5);
+
+2
+3
+5
+4
+1
+
+
+setTimeout has Zero delay
+callback function called async
+Engine will place the callback function in callback queue (Macrotask Queue) and move to call stack when empty. So no.2 will be printed  and 1 is skipped.
+Promise takes arguments in synchronous
+Promise is placed in another Jo b queue(microtask queue) So next numebr is 5
+Microtask (Promise ) has more priority than Macro task(settImeout) so it print 4 and then 1 
+
+
+

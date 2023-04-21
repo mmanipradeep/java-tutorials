@@ -1,0 +1,5 @@
+Reusable in multiple projects.
+Capture software engineering experiences.
+Provide transparency to the design of an application.
+Provide an industry standard approach to solve a recurring problem.
+Make our code easy to understand and debug.

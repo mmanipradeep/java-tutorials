@@ -1,0 +1,3 @@
+The client makes a request to the adapter by calling a method on it using the target interface.
+The adapter translates that request on the adaptee using the adaptee interface.
+Client receives the results of the call and is unaware of the adapter’s presence.

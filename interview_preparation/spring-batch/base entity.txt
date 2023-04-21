@@ -1,0 +1,179 @@
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+@MappedSuperclass
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public abstract class BaseEntity implements Serializable {
+ 
+  @Serial
+  private static final long serialVersionUID = 3986494663579679129L;
+ 
+  public static final int NB_PRECISION = 23;
+  public static final int NB_SCALE = 12;
+ 
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
+  private Long id;
+ 
+  @Version
+  @Column(name = "version")
+  private Integer version;
+}
+And in the service layer, we process the record one by one:
+
+@Transactional(rollbackOn = {SQLException.class})
+public void createPromotions(List<Promotion> promotions) {
+promotionRepository.saveAll(promotions.stream()
+        .map(service2EntityMapper::asPromotionEntity)
+        .toList());
+        }
+Line 1 — it’s always a good idea to wrap these kinds of operations (create/delete/update) in a transaction
+Line 3 — we stream the list of promotions
+Line 4 — we convert each promotion POJO to an entity
+Line 5 — we collect the promotion entities
+Line 3 — we save a list of promotion entities
+Note that the saveAll(List<E>) method does not necessarily save records in batch, as it only calls save(E) underneath.
+
+We need the bare minimum configuration for this setup for the data source.
+
+spring:
+  application:
+    name: czetsuyatech
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+Summary
+It’s always a good idea to wrap the create/update/delete operations in a transaction
+Use stream when dealing with lists of entities
+Use DTOs and POJOs when passing data from one layer to another
+For table id, use GenerationType.IDENTITY, when dealing with simple requirements
+I would use this approach when I need to process each record in a different transaction. In that case, I need to annotate this method with Transaction.NEVER and call another service that would actually do the data insertion. This means it’s possible to only save a fraction of the list due to errors.
+2.2 Reading, Processing, and Saving Promotions in Batch
+This is the ideal solution, as it efficiently saves a list of records. This is what I will do when dealing with batch inserts.
+
+BaseEntity
+
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+@MappedSuperclass
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public abstract class BaseEntity implements Serializable {
+ 
+  @Serial
+  private static final long serialVersionUID = 3986494663579679129L;
+ 
+  @Id
+  @GeneratedValue(generator = "ID_GENERATOR", strategy = GenerationType.AUTO)
+  @Column(name = "id")
+  private Long id;
+ 
+  @Version
+  @Column(name = "version")
+  private Integer version;
+}
+Line 14 — we are using an id generator that we will define in the promotion entity
+Line 20 — we added a version field annotated with @Version for optimistic locking
+PromotionEntity
+
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "promotion")
+@GenericGenerator(name = "ID_GENERATOR",
+    strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+    parameters = {@Parameter(name = "sequence_name", value = "promotion_seq")}
+)
+public class PromotionEntity extends BaseEntity {
+ 
+  @Column(name = "code")
+  private String code;
+   
+  // ...
+}
+Line 12 — we extend the BaseEntity
+Line 8 — we create a generic sequence generator that will map to the ID_GENERATOR defined in the BaseEntity
+Let’s check our revised service layer. I would use a CompletableFuture that I can chain if needed.
+
+@Transactional
+public CompletableFuture<Void> createPromotions(Promotions promotions) {
+ 
+log.debug("Creating promotions");
+ 
+return CompletableFuture.runAsync(() -> promotionRepository.saveAll(
+    promotions.getValues().stream()
+        .map(service2EntityMapper::asPromotionEntity)
+        .toList())
+);
+}
+Line 1 — annotate the method with Transaction so that it can revert when an error occurred
+Line 2 — our service method that returns a CompletableFuture<Void>
+Line 6 — here, we wrap our saveAll method inside an async block
+Line 7 — we stream to the list of promotions
+Line 8 — we convert each of the POJO to an entity
+Line 9 — we collect the list of entities
+Line 6 — we save all the entities, again it doesn’t necessarily mean that we’re saving in batch
+To enable batch saving, we must make changes to our configuration file.
+
+application.xml
+
+spring:
+  application:
+    name: czetsuyatech.com
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 5
+        generate_statistics: true
+    show-sql: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migrations
+    baseline-on-migrate: true
+    user: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+      path: /db
+Line 4 — our h2 data source
+Line 14 — you need to define the batch size. Along with sequenced id, it enables batch saving
+Line 15 — useful when checking that you have successfully enabled batch
+Line 17 — is all about the flyway configuration
+Summary
+It’s always a good idea to wrap the create/update/delete operations in a transaction
+Use stream when dealing with lists of entities
+Use DTOs and POJOs when passing data from one layer to another
+Use a custom sequence generator
+Define batch_size hibernate property in application XML
+I would use this approach to speed up the processing of records. The downside is that each batch is managed in one transaction, which means failing one record in that batch means the whole set will not be saved.
+3. Challenge
+Using the above approach, try to save records in different sizes: 100, 1000, 10000, and 1000000. You should be able to see a noticeable improvement in inserts.
+
+Spring
+Spring Boot
+Spring Data Jpa
+Batch Processing
+Spring Data
+8
+
+
+
+

@@ -1,0 +1,3 @@
+A class doesn’t know what sub-classes will be required to create
+A class wants its subclasses to specify the objects to be created.
+The parent classes choose the creation of objects to its sub-classes.

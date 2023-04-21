@@ -1,0 +1,1 @@
+Normally we use the constructor to create an Object. But if we need to do more behind the scene we can create a factory to create Objects. Here we define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.

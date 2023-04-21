@@ -1,0 +1,4 @@
+When?
+A system is very complex or difficult to understand.
+A simple interface is required to access a complex system.
+The abstractions and implementations of a subsystem are tightly coupled.
