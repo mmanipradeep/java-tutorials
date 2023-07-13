@@ -1,0 +1,36 @@
+john smilga
+
+div
+section 
+navbar
+primary styling principles
+
+
+JAvaScript
+Arrow functions
+array methods
+spread operator
+rest operator
+destructing
+ES6
+
+
+Workflow
+
+
+vite
+create-react-app .dev
+
+
+npx create-react-app my-app
+
+npm start
+
+
+npx create-react-app@latest app-name
+
+
+AutoRename Tag plugin
+
+ES7 react redux extension
+
