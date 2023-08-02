@@ -2,3 +2,44 @@ Single-receiver Message-based communication(one-to-one model)
 Muliple-receiver Message based communication(one-to-many model -topic)
 Fanout Publish/Subscribe Messaging Pattern
 Topic-Queue Chaining and Load Balancing Pattern
+
+
+
+Microservice architectures often require asynchronous communication patterns to handle long-running operations, improve scalability, and decouple microservices from each other. Asynchronous communication helps avoid blocking operations, which can lead to performance bottlenecks and scalability issues in a distributed environment. Here are some common asynchronous communication patterns used in microservices:
+
+Message Queues:
+
+Microservices send and receive messages through message queues (e.g., RabbitMQ, Apache Kafka, ActiveMQ).
+Producers send messages to queues, and consumers (microservices) process messages asynchronously.
+Message queues provide guaranteed delivery and can handle high message volumes.
+Publish-Subscribe Pattern:
+
+Microservices act as publishers and subscribers to specific topics or channels.
+Publishers send messages to specific topics, and subscribers receive messages from those topics they are interested in.
+This pattern allows for broadcasting messages to multiple subscribers.
+Event Sourcing:
+
+Microservices generate events to represent state changes or actions within the system.
+Events are persisted in an event store and can be replayed to recreate the state of the system.
+Subscribing microservices can react to events and update their local state accordingly.
+Polling:
+
+Some microservices use polling mechanisms to check for updates in other microservices or external systems.
+Although less efficient than message queues, it can be suitable for some scenarios.
+Webhooks:
+
+Webhooks are HTTP callbacks that allow microservices to receive event notifications from external systems or services.
+External systems trigger HTTP requests to specific endpoints in the microservices to inform them about changes or events.
+Command-Query Responsibility Segregation (CQRS):
+
+CQRS separates read and write operations, and asynchronous communication is often used between these components.
+Write commands are processed asynchronously, and query results are updated asynchronously in read models.
+Reactive Streams:
+
+Reactive streams are used to handle asynchronous data streams with backpressure.
+This pattern helps handle large amounts of data and ensures that the receiving microservice can process data at its own pace.
+Bulkhead Pattern:
+
+The Bulkhead pattern involves isolating components into separate execution threads or pools to prevent failures in one component from affecting others.
+Asynchronous communication can be used to enforce these boundaries and handle failures more gracefully.
+Asynchronous communication is beneficial in microservices architectures, but it also introduces challenges such as eventual consistency and handling duplicate messages. Developers need to consider these factors while implementing asynchronous communication to ensure system reliability and correctness. Additionally, the choice of a specific pattern depends on the use case, scalability requirements, and the tools and technologies used in the microservices ecosystem.
