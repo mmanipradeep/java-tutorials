@@ -1,0 +1,21 @@
+1.Types of Class loader ?
+2.What is chaining constructor?
+3. Young and new geenration?
+4.Types of garbage collector ?
+5.How hashmap works ?
+6.How Markand sweep algorithm works ?
+7.Why string is immutable ? 
+8.Strong and Weak reference in Memory mangement?
+9.How to achive synchronisation in distributed environment ?
+10.How to identify memory leaks in java ?
+11. Find the longest common prefix in Java ?
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+Example 2:
+Input: strs = ["dog","racecar","car"]
+Output: ""
+
+12.  Find duplicate numbers in array using JAva 8?
+
+Integer arr[] = {5, 7, 5, 7, 5, 2};
